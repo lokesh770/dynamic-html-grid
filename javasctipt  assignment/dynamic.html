@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            margin: 10px;
+            padding: 10px;
+            text-align:start;
+            cursor: pointer;
+          }
+          
+          .card img {
+            max-width: 100%;
+            height: auto;
+          }
+          @media  (max-width:1280px)
+          {
+            body{
+              overflow-x: hidden;
+            }
+            #product-grid{
+              flex-wrap: wrap;
+            }
+            #new-product-grid{
+              flex-wrap: wrap;
+            }
+             .card{
+              width: 217px;
+             height: auto; 
+            }
+          }    
+          
+           
+    </style>
+</head>
+<body>
+    <h1 id="formen">clothing for men and women</h1>
+    <div id="product-grid"></div>
+    <h1>accessories for men and women</h1>
+    <div id="new-product-grid"></div>
+    <script src="./dynamic.js"></script>
+</body>
+</html>
